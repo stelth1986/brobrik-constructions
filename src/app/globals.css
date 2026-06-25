@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/*
+  Brobrik Constructions — design tokens.
+  Values below are taken directly from the official Brand Style Guide (May 2026, v1).
+  Brand fonts: Eurostile Extended (logo/headings) + Montserrat (headings/body).
+  Eurostile Extended is licensed (not on Google Fonts); "Michroma" is used as the
+  closest free substitute for brand/label moments. Drop the real Eurostile files in
+  and repoint --font-brand to swap it everywhere.
+*/
+
+@theme {
+  /* Brand colour palette (exact from guide) */
+  --color-ink: #0c0c16; /* near-black — primary text + deepest sections */
+  --color-navy: #12284c; /* deep navy */
+  --color-blue: #1470b3; /* brand blue */
+  --color-orange: #f47920; /* accent — used sparingly */
+
+  --color-paper: #f4f5f7; /* cool near-white ground */
+  --color-paper-2: #e8eaee;
+  --color-line: color-mix(in srgb, #0c0c16 14%, transparent);
+  --color-line-strong: color-mix(in srgb, #0c0c16 26%, transparent);
+
+  /* Type */
+  --font-display: var(--font-montserrat);
+  --font-sans: var(--font-montserrat);
+  --font-brand: var(--font-michroma); /* Eurostile Extended substitute */
+
+  /* Easing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-orange);
+  color: #fff;
+}
+
+/* Editorial helpers ------------------------------------------------------ */
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 400;
+}
+.font-brand {
+  font-family: var(--font-brand), var(--font-display), sans-serif;
+}
+
+/* The "title block" label — Eurostile-style wide technical caps.
+   Replaces the cliché uppercase eyebrow with a blueprint annotation. */
+.titleblock {
+  font-family: var(--font-brand), var(--font-display), sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Tabular data (phone, email, indices) */
+.font-mono {
+  font-family: var(--font-display), monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* Hairline rule used as a section divider */
+.rule {
+  height: 1px;
+  background: var(--color-line);
+}
+
+/* Fluid display type — large, light, architectural */
+.display-xl {
+  font-size: clamp(2.6rem, 8.5vw, 10rem);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+.display-lg {
+  font-size: clamp(2.1rem, 5.5vw, 5.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.018em;
+  font-weight: 300;
+}
+
+/* Mask the page-edges of full-bleed media a touch for legibility */
+.scrim-b {
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--color-ink) 80%, transparent),
+    transparent 55%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
