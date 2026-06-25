@@ -21,8 +21,8 @@ export const company = {
 export const contact = {
   phone: "(02) 9584 3999",
   phoneHref: "tel:+61295843999",
-  email: "admin@brobrik.com.au",
-  emailHref: "mailto:admin@brobrik.com.au",
+  email: "admin@brobrikconstructions.com.au",
+  emailHref: "mailto:admin@brobrikconstructions.com.au",
   postal: ["PO Box 870", "Riverwood, NSW 2210"],
   region: "Sydney Metropolitan",
 };
@@ -145,12 +145,12 @@ export type Project = {
 };
 
 const blanche = "/media/projects/blanche-st-oatley";
-const cremlin = "/media/projects/cremlin-place-menai";
+const cremin = "/media/projects/cremin-place-menai";
 
 export const projects: Project[] = [
   {
-    slug: "cremlin-place-menai",
-    title: "Cremlin Place",
+    slug: "cremin-place-menai",
+    title: "Cremin Place",
     suburb: "Menai",
     category: "New Build",
     specs: [
@@ -165,20 +165,20 @@ export const projects: Project[] = [
       "A brand-new home built from the ground up on an elevated, bush-backed block in Menai. Dark face brick and crisp white render set a confident street presence, while the rear opens almost entirely to glass, an infinity-edge pool and a covered alfresco made for entertaining.",
       "Inside, five bedrooms and four bathrooms are arranged around a central kitchen with a stone island and butler's pantry, flowing through to open living with a gas fireplace, a dedicated media room and a home gym. Every junction was set out and finished in-house, so the lines hold true from the facade to the last tile.",
     ],
-    hero: `${cremlin}/01.jpg`,
+    hero: `${cremin}/01.jpg`,
     heroAlt:
-      "The dusk street facade of the Cremlin Place new build, lit and landscaped.",
+      "The dusk street facade of the Cremin Place new build, lit and landscaped.",
     images: [
-      `${cremlin}/02.jpg`,
-      `${cremlin}/03.jpg`,
-      `${cremlin}/04.jpg`,
-      `${cremlin}/05.jpg`,
-      `${cremlin}/06.jpg`,
-      `${cremlin}/07.jpg`,
-      `${cremlin}/08.jpg`,
-      `${cremlin}/09.jpg`,
-      `${cremlin}/10.jpg`,
-      `${cremlin}/11.jpg`,
+      `${cremin}/02.jpg`,
+      `${cremin}/03.jpg`,
+      `${cremin}/04.jpg`,
+      `${cremin}/05.jpg`,
+      `${cremin}/06.jpg`,
+      `${cremin}/07.jpg`,
+      `${cremin}/08.jpg`,
+      `${cremin}/09.jpg`,
+      `${cremin}/10.jpg`,
+      `${cremin}/11.jpg`,
     ],
   },
   {
