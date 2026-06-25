@@ -6,7 +6,7 @@ const ledger = [
   ["Established", company.ledger.established.replace("Est. ", "")],
   ["Trade experience", "75 years combined"],
   ["On the tools", "50+ tradespeople"],
-  ["Sectors", "Residential · Commercial"],
+  ["Focus", "Residential"],
 ];
 
 export function Manifesto() {

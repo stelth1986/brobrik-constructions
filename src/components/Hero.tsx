@@ -79,8 +79,8 @@ export function Hero() {
           className="mt-6 flex flex-col gap-6 border-t border-paper/20 pt-6 md:flex-row md:items-end md:justify-between"
         >
           <p className="max-w-md text-base leading-relaxed text-paper/75 md:text-lg">
-            {company.blurbShort} New builds, extensions, renovations and remedial
-            work. For homes and buildings meant to last.
+            {company.blurbShort} New builds, extensions and renovations. For
+            homes meant to last.
           </p>
           <a
             href="#work"

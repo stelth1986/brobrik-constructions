@@ -15,19 +15,19 @@ const ledger: [string, string][] = [
   ["Established", "1994"],
   ["Trade experience", "75 years combined"],
   ["On the tools", "50+ tradespeople"],
-  ["Sectors", "Residential · Commercial"],
+  ["Focus", "Residential"],
   ["Region", contact.region],
   ["Family", `The ${company.family}`],
 ];
 
 const sectors = [
   {
-    k: "Residential",
-    v: "Family homes, from a single bathroom to a ground-up build, finished to live in for decades.",
+    k: "New homes",
+    v: "Ground-up family homes, taken from a bare site to handover and built to live in for decades.",
   },
   {
-    k: "Commercial",
-    v: "Commercial buildings and remedial works, run with the program discipline larger projects demand.",
+    k: "Renovations",
+    v: "Extensions and full renovations that bring an existing home back to its best.",
   },
 ];
 
@@ -74,8 +74,8 @@ export default function AboutPage() {
 
             <Reveal delay={0.15} className="mt-6 max-w-2xl">
               <p className="text-lg leading-relaxed text-ink/70">
-                We work across the Sydney metropolitan area, on homes and
-                commercial buildings alike. We keep the team in-house and hold
+                We work across the Sydney metropolitan area, on homes of
+                every size. We keep the team in-house and hold
                 to the same standard on every job: high-quality workmanship,
                 delivered with honesty, professionalism and the kind of care a
                 family puts its name to.
@@ -83,11 +83,11 @@ export default function AboutPage() {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <dl className="mt-12 grid grid-cols-1 sm:grid-cols-2">
+              <dl className="mt-12 grid grid-cols-1 gap-x-10 sm:grid-cols-2 md:gap-x-16">
                 {ledger.map(([k, v]) => (
                   <div
                     key={k}
-                    className="flex items-baseline justify-between gap-4 border-b border-line py-4"
+                    className="flex items-baseline justify-between gap-6 border-b border-line py-5"
                   >
                     <dt className="titleblock text-ink/45">{k}</dt>
                     <dd className="font-mono text-sm text-ink">{v}</dd>
@@ -102,7 +102,7 @@ export default function AboutPage() {
       {/* Sectors */}
       <section className="bg-paper-2 px-5 py-20 md:px-10 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <p className="titleblock text-ink/45">Where we work</p>
+          <p className="titleblock text-ink/45">What we build</p>
           <div className="mt-8 grid grid-cols-1 gap-px overflow-hidden border border-line sm:grid-cols-2">
             {sectors.map((s) => (
               <Reveal key={s.k} className="bg-paper-2 p-8">

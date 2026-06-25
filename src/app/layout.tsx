@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s · Brobrik Constructions",
   },
   description:
-    "A Sydney building company run by the Englezos family since 1994. New builds, extensions, renovations and remedial works across residential and commercial. Built square, built once.",
+    "A Sydney building company run by the Englezos family since 1994. New builds, extensions and renovations for homes across Sydney. Built square, built once.",
   openGraph: {
     title: "Brobrik Constructions",
     description:

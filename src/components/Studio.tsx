@@ -3,12 +3,12 @@ import { Reveal, RevealLines } from "./Reveal";
 
 const sectors = [
   {
-    k: "Residential",
-    v: "Family homes, from a single bathroom to a ground-up build, finished to live in for decades.",
+    k: "New homes",
+    v: "Ground-up family homes, taken from a bare site to handover and built to live in for decades.",
   },
   {
-    k: "Commercial",
-    v: "Commercial buildings and remedial works, run with the program discipline larger projects demand.",
+    k: "Renovations",
+    v: "Extensions and full renovations that bring an existing home back to its best.",
   },
 ];
 

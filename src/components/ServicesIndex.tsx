@@ -101,10 +101,6 @@ export function ServicesIndex() {
               );
             })}
 
-            <p className="titleblock mt-8 max-w-sm text-paper/45">
-              Remedial Repairs covers all remedial building work: structural,
-              waterproofing, concrete and facade.
-            </p>
           </ul>
 
           {/* Sticky preview panel (desktop) */}

@@ -14,7 +14,7 @@ export const company = {
     established: "Est. 1994",
     combinedYears: "75 yrs combined trade",
     tradespeople: "50+ on the tools",
-    sectors: "Residential & commercial",
+    sectors: "Residential",
   },
 };
 
@@ -46,11 +46,10 @@ export const services: Service[] = [
     index: "01",
     slug: "new-builds",
     title: "New Builds",
-    lede: "Ground-up homes and buildings, taken from a bare site to handover.",
-    body: "We build new homes and commercial buildings from the slab up, managing the trades, the program and the standard so the finished structure reads exactly as it was drawn. Three decades of doing it means the lines stay true long after we leave the site.",
+    lede: "Ground-up homes, taken from a bare site to handover.",
+    body: "We build new homes from the slab up, managing the trades, the program and the standard so the finished structure reads exactly as it was drawn. Three decades of doing it means the lines stay true long after we leave the site.",
     scope: [
       "Custom residential homes",
-      "Commercial buildings",
       "Site works & structural",
       "Full project management",
     ],
@@ -89,24 +88,6 @@ export const services: Service[] = [
     image: "/media/g-12.jpg",
     alt: "A renovated open-plan living and dining space in soft stone and timber.",
     images: ["/media/s-10.jpg", "/media/g-16.jpg", "/media/g-07.jpg"],
-  },
-  {
-    index: "04",
-    slug: "remedial-repairs",
-    title: "Remedial Repairs",
-    lede: "Putting buildings right: structure, waterproofing, concrete and facade.",
-    body: "Remedial work is where masonry experience pays off. We diagnose and repair the things that go wrong in buildings over time (water, movement, concrete and brick) and return the structure to sound, watertight condition. All remedial building work is handled in-house.",
-    scope: [
-      "Concrete cancer & spalling",
-      "Waterproofing & leak repair",
-      "Structural & crack repair",
-      "Brick, render & facade",
-      "Balcony & balustrade",
-      "Building rectification",
-    ],
-    image: "/media/g-06.jpg",
-    alt: "An ivy-clad two-storey home at dusk, masonry and detailing intact.",
-    images: ["/media/g-01.jpg", "/media/hero-still.jpg", "/media/g-03.jpg"],
   },
 ];
 

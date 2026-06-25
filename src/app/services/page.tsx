@@ -9,7 +9,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "New builds, extensions, renovations and remedial works across residential and commercial, by the Englezos family since 1994.",
+    "New builds, extensions and renovations, by the Englezos family since 1994.",
 };
 
 export default function ServicesPage() {
@@ -17,7 +17,7 @@ export default function ServicesPage() {
     <main>
       <PageHeader
         title="Services"
-        subtitle="New builds, extensions, renovations and remedial works, across residential and commercial."
+        subtitle="New builds, extensions and renovations, across the Sydney metropolitan area."
         image="/media/g-01.jpg"
         imageAlt="Rear elevation of a Brobrik-built home."
       />
